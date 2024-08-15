@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>My Landing Page</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <button id="toggle" class="toggle">
+      <i class="fa fa-bars fa-2x"></i>
+    </button>
+    <h1>Welcome to My Landing Page</h1>
+    <p>Discover the latest in technology, web development tips, and personal insights that will help you elevate your skills and career.</p>
+    <button class="cta-btn" id="open">Sign Up</button>
+  </header>
+
+  <div class="container">
+    <h2>What is this Landing Page About?</h2>
+    <p>This landing page is designed to introduce you to my professional portfolio, showcase my work, and share insights through my blog. Whether you're here to explore my projects or get in touch, you've come to the right place.</p>
+    <p>I specialize in web development, creating user-friendly websites and applications that are both aesthetically pleasing and functional. My expertise includes HTML, CSS, JavaScript, and modern frameworks like React and Angular.</p>
+
+    <h2>Why Should You Follow My Work?</h2>
+    <p>By following my work, you’ll stay updated with the latest trends in web development. I regularly share tutorials, code snippets, and tips that can help you improve your coding skills and keep up with the ever-evolving tech industry.</p>
+
+    <h2>Benefits of Joining My Community</h2>
+    <ul>
+      <li>Lifetime Access to My Resources</li>
+      <li>30-Day Money-Back Guarantee on Any Paid Content</li>
+      <li>Tailored Customer Support for Subscribers</li>
+    </ul>
+
+    <p>Joining my community means becoming part of a network of like-minded professionals who are passionate about technology and innovation. You'll have access to exclusive content, early access to new tutorials, and personalized support.</p>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-container" id="modal-container">
+    <div class="modal">
+      <button class="close-btn" id="close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3>Sign Up</h3>
+      </div>
+      <div class="modal-content">
+        <p>Register with us to receive exclusive offers, personalized support, and more.</p>
+        <form class="modal-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" class="form-input">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" class="form-input">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" class="form-input">
+          </div>
+          <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Confirm your password" class="form-input">
+          </div>
+          <input type="submit" value="Submit" class="submit-btn">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
